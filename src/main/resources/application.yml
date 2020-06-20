@@ -1,0 +1,24 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.98.163.117:3306/security_authority
+    username: root
+    password: 123456
+  main:
+    allow-bean-definition-overriding: true
+mybatis:
+  type-aliases-package: com.heiio.register.domain
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.heiio.register: debug
+server:
+  port: 8081
+
+rsa:
+  key:
+    publicKeyFile: E:\projects\book-register\src\main\resources\auth\id_rsa_public.pub
+    privateKeyFile: E:\projects\book-register\src\main\resources\auth\id_rsa_private
+
